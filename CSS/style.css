@@ -1,0 +1,80 @@
+:root {
+    --primary: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+@font-face {
+    font-family: 'font1';
+    src: url(../assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background-color: var(--primary);
+    font-family: 'font1';
+}
+.container {
+    padding: 20px;
+    background-color: var(--White);
+    width: 370px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Para centrar vertical y horizontalmente */
+    top: 50%; /* Coloca la parte superior del contenedor en el 50% del viewport */
+    left: 50%; /* Coloca el lado izquierdo del contenedor en el 50% del viewport */
+    transform: translate(-50%, -50%); /* Centra el contenedor correctamente */
+    -webkit-box-shadow: 10px 9px 0px 0px rgba(0,0,0,0.78);
+    -moz-box-shadow: 10px 9px 0px 0px rgba(0,0,0,0.78);
+    box-shadow: 10px 9px 0px 0px rgba(0,0,0,0.78);
+
+}
+.image {
+    border-radius: 10px;
+    width: 100%;
+}
+.status {
+    padding: 5px;
+    background-color: var(--primary);
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px 0;
+}
+.date {
+    margin: 10px 0;
+}
+.title {
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.title:hover {
+    cursor: pointer;
+    color: var(--primary);
+}
+.profile {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    align-items: center;
+}
+.info {
+    color: var(--Grey);
+    margin-bottom: 20px;
+}
+.name{
+    font-weight: 700;
+    font-size: 13px;
+}
+.avatar{
+    width: 35px;
+}
